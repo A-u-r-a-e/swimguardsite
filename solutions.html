@@ -29,7 +29,10 @@
         <section class="video-hero">
             <div class="video-container">
                 <video autoplay muted loop playsinline class="hero-video">
-                    <source src="images/detectionsample_web.mp4" type="video/mp4" />
+                    <source
+                        src="images/detectionsample_web.mp4"
+                        type="video/mp4"
+                    />
                     Your browser does not support the video tag.
                 </video>
             </div>
@@ -111,12 +114,12 @@
                 <h3 class="section-subtitle-centered-white">Further Details</h3>
                 <div class="details-grid">
                     <div class="detail-item">
-                        <h4>ESP32-CAM System</h4>
+                        <h4>Camera & Housing</h4>
                         <p>
                             Powered by the ESP32-CAM microcontroller with
-                            underwater-capable camera housed in a 100mm
-                            waterproof acrylic enclosure. Easy poolside mounting
-                            with no pool modifications required.
+                            underwater-capable camera housed in a modular 100mm
+                            waterproof acrylic enclosure. Adjustable linear
+                            slides and clamps for easy installation anywhere.
                         </p>
                     </div>
                     <div class="detail-item">
@@ -136,11 +139,11 @@
                         </p>
                     </div>
                     <div class="detail-item">
-                        <h4>Edge Computing</h4>
+                        <h4>Agile Computing</h4>
                         <p>
-                            All processing happens locally on the ESP32 device.
-                            No cloud dependency, no monthly computing fees,
-                            instant response times under 500ms.
+                            All processing happens locally on the viewer's
+                            device. No cloud dependency, no monthly computing
+                            fees, no processing delay times.
                         </p>
                     </div>
                     <div class="detail-item">
@@ -155,8 +158,8 @@
                         <h4>Affordable Safety</h4>
                         <p>
                             Starting at RMB 1,500 for hardware plus RMB
-                            300-1,200/year for software. The most cost-effective
-                            drowning detection solution available.
+                            300-800/year for software. The most cost-effective
+                            modular drowning detection solution available.
                         </p>
                     </div>
                 </div>
@@ -213,8 +216,8 @@
                             </div>
                             <ul class="tier-features">
                                 <li>Everything in Essential, plus:</li>
-                                <li>Advanced analytics dashboard</li>
-                                <li>Incident reporting & logs</li>
+                                <li>Infinite Free Hardware Replacements</li>
+                                <li>Free Installation Service</li>
                                 <li>Priority support</li>
                                 <li>Software updates & improvements</li>
                             </ul>
@@ -222,20 +225,6 @@
                                 href="contact.html"
                                 class="btn btn-primary btn-large"
                                 >Get Started</a
-                            >
-                        </div>
-                    </div>
-
-                    <div class="pricing-enterprise">
-                        <div class="enterprise-content">
-                            <h3>Enterprise</h3>
-                            <p>
-                                Custom solutions for multiple pools, facilities,
-                                or large-scale deployments. Dedicated support,
-                                API access, and on-site training available.
-                            </p>
-                            <a href="contact.html" class="btn btn-outline-white"
-                                >Contact Us for Custom Pricing</a
                             >
                         </div>
                     </div>
@@ -283,36 +272,67 @@
                 const heroVideo = document.querySelector(".hero-video");
                 if (heroVideo) {
                     console.log("Video element found:", heroVideo);
-                    console.log("Video src:", heroVideo.querySelector('source').src);
+                    console.log(
+                        "Video src:",
+                        heroVideo.querySelector("source").src,
+                    );
                     console.log("Video readyState:", heroVideo.readyState);
                     console.log("Video networkState:", heroVideo.networkState);
                     console.log("Video paused:", heroVideo.paused);
 
                     // Listen for all video events
-                    heroVideo.addEventListener('loadstart', () => console.log("VIDEO EVENT: loadstart"));
-                    heroVideo.addEventListener('loadeddata', () => console.log("VIDEO EVENT: loadeddata"));
-                    heroVideo.addEventListener('loadedmetadata', () => {
+                    heroVideo.addEventListener("loadstart", () =>
+                        console.log("VIDEO EVENT: loadstart"),
+                    );
+                    heroVideo.addEventListener("loadeddata", () =>
+                        console.log("VIDEO EVENT: loadeddata"),
+                    );
+                    heroVideo.addEventListener("loadedmetadata", () => {
                         console.log("VIDEO EVENT: loadedmetadata");
-                        console.log("Video dimensions:", heroVideo.videoWidth, "x", heroVideo.videoHeight);
+                        console.log(
+                            "Video dimensions:",
+                            heroVideo.videoWidth,
+                            "x",
+                            heroVideo.videoHeight,
+                        );
                     });
-                    heroVideo.addEventListener('canplay', () => console.log("VIDEO EVENT: canplay"));
-                    heroVideo.addEventListener('canplaythrough', () => console.log("VIDEO EVENT: canplaythrough"));
-                    heroVideo.addEventListener('play', () => console.log("VIDEO EVENT: play"));
-                    heroVideo.addEventListener('playing', () => console.log("VIDEO EVENT: playing"));
-                    heroVideo.addEventListener('error', (e) => {
+                    heroVideo.addEventListener("canplay", () =>
+                        console.log("VIDEO EVENT: canplay"),
+                    );
+                    heroVideo.addEventListener("canplaythrough", () =>
+                        console.log("VIDEO EVENT: canplaythrough"),
+                    );
+                    heroVideo.addEventListener("play", () =>
+                        console.log("VIDEO EVENT: play"),
+                    );
+                    heroVideo.addEventListener("playing", () =>
+                        console.log("VIDEO EVENT: playing"),
+                    );
+                    heroVideo.addEventListener("error", (e) => {
                         console.error("VIDEO EVENT: error", e);
-                        console.error("Video error code:", heroVideo.error?.code);
-                        console.error("Video error message:", heroVideo.error?.message);
+                        console.error(
+                            "Video error code:",
+                            heroVideo.error?.code,
+                        );
+                        console.error(
+                            "Video error message:",
+                            heroVideo.error?.message,
+                        );
                     });
-                    heroVideo.addEventListener('stalled', () => console.log("VIDEO EVENT: stalled"));
-                    heroVideo.addEventListener('suspend', () => {
+                    heroVideo.addEventListener("stalled", () =>
+                        console.log("VIDEO EVENT: stalled"),
+                    );
+                    heroVideo.addEventListener("suspend", () => {
                         console.log("VIDEO EVENT: suspend");
-                        console.log("Video error after suspend:", heroVideo.error);
+                        console.log(
+                            "Video error after suspend:",
+                            heroVideo.error,
+                        );
                     });
 
                     // Check source element errors
-                    const sourceElement = heroVideo.querySelector('source');
-                    sourceElement.addEventListener('error', (e) => {
+                    const sourceElement = heroVideo.querySelector("source");
+                    sourceElement.addEventListener("error", (e) => {
                         console.error("SOURCE ERROR:", e);
                         console.error("Source element:", sourceElement);
                     });
@@ -321,12 +341,18 @@
                     heroVideo.load();
 
                     setTimeout(() => {
-                        console.log("After 1 second - readyState:", heroVideo.readyState);
-                        heroVideo.play().then(() => {
-                            console.log("✅ Video playing successfully!");
-                        }).catch((error) => {
-                            console.error("❌ Video play error:", error);
-                        });
+                        console.log(
+                            "After 1 second - readyState:",
+                            heroVideo.readyState,
+                        );
+                        heroVideo
+                            .play()
+                            .then(() => {
+                                console.log("✅ Video playing successfully!");
+                            })
+                            .catch((error) => {
+                                console.error("❌ Video play error:", error);
+                            });
                     }, 1000);
                 }
             });
