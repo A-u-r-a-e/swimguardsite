@@ -1,0 +1,390 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>SwimGuard - Affordable AI for Safer Water</title>
+        <link rel="stylesheet" href="css/styles.css" />
+        <link rel="stylesheet" href="css/redesign.css" />
+    </head>
+    <body>
+        <!-- Header -->
+        <header class="header">
+            <nav class="nav-container">
+                <div class="logo">
+                    <h1>SwimGuard</h1>
+                    <p class="logo-tagline">Affordable AI for Safer Water</p>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="solutions.html">Solutions</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Static Image Hero -->
+        <section class="static-hero">
+            <div class="static-hero-image">
+                <img
+                    src="images/hero.jpg"
+                    alt="SwimGuardian Hero"
+                    class="hero-image"
+                />
+                <div class="hero-overlay"></div>
+            </div>
+            <div class="hero-content-wrapper">
+                <div class="hero-content">
+                    <h1 class="hero-title">SwimGuard</h1>
+                    <p class="hero-subtitle">Affordable AI for Safer Waters</p>
+                    <p class="hero-description">
+                        Advanced drowning detection technology that's easy to
+                        install, simple to use, and affordable for public pools
+                        everywhere.
+                    </p>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <span>↓</span>
+                <p>Scroll to explore</p>
+            </div>
+        </section>
+
+        <!-- Catchy Stat Section -->
+        <section class="catchy-stat-section">
+            <div class="container">
+                <div class="simple-stat">
+                    <h2 class="stat-large">300,000</h2>
+                    <p class="stat-subtitle">
+                        lives lost to drowning every year
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- The Problem: Drowning in Pools -->
+        <section class="problem-section">
+            <div class="container">
+                <h1 class="section-title-huge">Drowning in Pools</h1>
+                <h2 class="section-subtitle-large">The Silent Killer</h2>
+
+                <!-- Problem Description -->
+                <div class="problem-text">
+                    <p class="lead-text">
+                        Drowning remains a major global safety issue, claiming
+                        an estimated 300,000 lives in 2021, which equates to
+                        about 30 deaths every hour. Children are
+                        disproportionately affected, as drowning is one of the
+                        leading causes of death for children aged 0-14.
+                    </p>
+
+                    <p class="lead-text">
+                        The risk of drowning increases significantly in public
+                        and private pools without adequate supervision. In urban
+                        China, licensed pools are spaces sought out for
+                        recreational activities by families, yet they are often
+                        lacking in the safety aspect. With millions of summer
+                        visitors to Shanghai's 1,094 licensed pools, these
+                        facilities face overcrowding risks and strained
+                        lifeguarding capabilities.
+                    </p>
+
+                    <p class="lead-text">
+                        Traditional drowning detection systems cost
+                        $50,000-$200,000+, require pool drainage and weeks of
+                        downtime for installation, and are simply out of reach
+                        for most public pools. The financial burden of
+                        installing complex, costly systems is prohibitive for
+                        low-budget facilities that need them most.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Meet the SwimGuardian -->
+        <section class="meet-guardian-section">
+            <div class="container">
+                <div class="guardian-product-showcase">
+                    <h1 class="display-title">Meet the SwimGuardian</h1>
+
+                    <p class="lead-text">
+                        An ESP32-CAM based drowning detection system housed in a
+                        waterproof acrylic enclosure, designed to attach
+                        directly to pool channel drains. Starting at RMB 1,500
+                        for hardware plus RMB 300-1,200/year for software, it's
+                        the most affordable drowning detection solution on the
+                        market.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Architecture Section with Background -->
+        <section class="architecture-section">
+            <div class="container">
+                <div class="architecture-content-column">
+                    <h2 class="section-title-large">Our Architecture</h2>
+
+                    <p>
+                        SwimGuardian combines YOLOv8 object recognition with
+                        YoloPose pose detection and LSTM neural networks. This
+                        three-stage architecture shrinks data density from
+                        millions of pixels to under 50 keypoint coordinates,
+                        enabling real-time processing on affordable edge
+                        devices.
+                    </p>
+
+                    <p>
+                        Our coordinate repositioning and distance normalization
+                        ensure stable recognition accuracy in crowded pools. The
+                        LSTM neural network analyzes patterns over time,
+                        dramatically reducing false positives while maintaining
+                        100% true positive rate.
+                    </p>
+
+                    <p>
+                        All processing happens locally on the ESP32
+                        microcontroller. No cloud dependency, no monthly
+                        computing fees, and instant response times under 500ms.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Highlights -->
+        <section class="guardian-highlights-section">
+            <div class="container">
+                <h2 class="section-title-centered">Highlights</h2>
+                <p class="section-intro">
+                    Breakthrough innovations that make our system uniquely
+                    effective
+                </p>
+
+                <div class="highlights-single-column">
+                    <div class="highlight-card">
+                        <h3>Hassle-Free Usage</h3>
+                        <p>
+                            Unlike wearable systems that require swimmers to
+                            wear devices, SwimGuardian works passively.
+                            Installation is simple - attaches to pool channel
+                            drains with basic mounting hardware. No pool
+                            modifications, no underwater wiring, no drainage
+                            required.
+                        </p>
+                    </div>
+
+                    <div class="highlight-card">
+                        <h3>Contextual Awareness</h3>
+                        <p>
+                            Our Long Short-Term Memory neural network uses
+                            time-variant video feeds to understand patterns over
+                            time, dramatically reducing false positives.
+                            Advanced coordinate repositioning and distance
+                            normalization ensure stable recognition accuracy
+                            even in crowded pools.
+                        </p>
+                    </div>
+
+                    <div class="highlight-card">
+                        <h3>Efficient AI Architecture</h3>
+                        <p>
+                            Combines YOLOv8 object recognition with YoloPose
+                            pose detection to shrink data density from millions
+                            of pixels to under 50 keypoint coordinates. This
+                            enables real-time processing on affordable edge
+                            devices like the ESP32-CAM, eliminating cloud
+                            dependency and monthly computing fees.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Every Second Counts -->
+        <section class="every-second-counts-section">
+            <div class="container">
+                <div class="seconds-count-content">
+                    <h2 class="display-title-dark">Every Second Counts</h2>
+                    <p class="lead-paragraph-centered">
+                        Drowning can happen in as little as 20 seconds.<br />A
+                        person can lose consciousness in under 60 seconds.<br />
+                        We can't afford to wait.
+                    </p>
+
+                    <p class="lead-paragraph-centered">
+                        SwimGuardians afford lifeguards precious seconds that
+                        save lives. <br />
+                        Every pool and their users deserve access to this
+                        life-saving technology that actually works.
+                    </p>
+
+                    <div class="cta-buttons-centered">
+                        <a href="solutions.html" class="btn btn-primary btn-xl"
+                            >Get Your Guardian</a
+                        >
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section class="contact-form-section">
+            <div class="container">
+                <h2 class="contact-form-title">Get in Touch</h2>
+                <p class="contact-form-subtitle">
+                    Have questions? We'd love to hear from you.
+                </p>
+
+                <form class="contact-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input
+                                type="text"
+                                id="name"
+                                name="name"
+                                placeholder="Your name"
+                                required
+                            />
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="your.email@example.com"
+                                required
+                            />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input
+                            type="text"
+                            id="subject"
+                            name="subject"
+                            placeholder="What's this about?"
+                            required
+                        />
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="5"
+                            placeholder="Your message..."
+                            required
+                        ></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-xl">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-section">
+                        <h3>SwimGuard</h3>
+                        <p>Affordable AI for Safer Waters</p>
+                        <p class="footer-description">
+                            Making pool safety accessible to everyone through
+                            innovative technology.
+                        </p>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="solutions.html">Solutions</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Contact</h4>
+                        <p>Email: benjamin02pd2027@saschina.org</p>
+                        <p>Phone: +86 19512309159</p>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2025 SwimGuard. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Scroll Animation Script -->
+        <script>
+            // Parallax zoom effect for hero
+            window.addEventListener("scroll", function () {
+                const scrolled = window.pageYOffset;
+                const heroImage = document.querySelector(
+                    ".static-hero-image .hero-image",
+                );
+
+                if (heroImage && scrolled < window.innerHeight) {
+                    const scale = 1.15 + scrolled * 0.0002;
+                    heroImage.style.transform = `scale(${scale})`;
+                }
+            });
+
+            // Smooth scroll for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+                anchor.addEventListener("click", function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(
+                        this.getAttribute("href"),
+                    );
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: "smooth",
+                            block: "start",
+                        });
+                    }
+                });
+            });
+
+            // Animate scroll indicator
+            const scrollIndicator = document.querySelector(".scroll-indicator");
+            if (scrollIndicator) {
+                setInterval(() => {
+                    scrollIndicator.style.animation = "none";
+                    setTimeout(() => {
+                        scrollIndicator.style.animation = "bounce 2s infinite";
+                    }, 10);
+                }, 2000);
+            }
+
+            // Intersection Observer for highlight cards
+            document.addEventListener("DOMContentLoaded", function () {
+                const observerOptions = {
+                    threshold: 0.2,
+                    rootMargin: "0px 0px -100px 0px",
+                };
+
+                const observer = new IntersectionObserver(function (entries) {
+                    entries.forEach((entry, index) => {
+                        if (entry.isIntersecting) {
+                            setTimeout(() => {
+                                entry.target.classList.add("visible");
+                            }, index * 150);
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                }, observerOptions);
+
+                const highlightCards =
+                    document.querySelectorAll(".highlight-card");
+                highlightCards.forEach((card) => {
+                    observer.observe(card);
+                });
+            });
+        </script>
+    </body>
+</html>
