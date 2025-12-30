@@ -1,142 +1,147 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - SwimGuard</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/redesign.css">
-</head>
-<body>
-    <!-- Header -->
-    <header class="header">
-        <nav class="nav-container">
-            <div class="logo">
-                <h1>SwimGuard</h1>
-                <p class="logo-tagline">Affordable AI for Safer Water</p>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Contact Us - SwimGuard</title>
+        <link rel="stylesheet" href="css/styles.css" />
+        <link rel="stylesheet" href="css/redesign.css" />
+    </head>
+    <body>
+        <!-- Header -->
+        <header class="header">
+            <nav class="nav-container">
+                <div class="logo">
+                    <h1>SwimGuard</h1>
+                    <p class="logo-tagline">Affordable AI for Safer Water</p>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="solutions.html">Solutions</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Contact Form Hero -->
+        <section class="contact-hero-section">
+            <div class="container">
+                <h1 class="contact-hero-title">Get in Touch</h1>
+                <p class="contact-hero-subtitle">
+                    Have questions about SwimGuardian? We'd love to hear from
+                    you.
+                </p>
             </div>
-            <ul class="nav-menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="solutions.html">Solutions</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="contact.html" class="active">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+        </section>
 
-    <!-- Contact Form Hero -->
-    <section class="contact-hero-section">
-        <div class="container">
-            <h1 class="contact-hero-title">Get in Touch</h1>
-            <p class="contact-hero-subtitle">
-                Have questions about SwimGuardian? We'd love to hear from you.
-            </p>
-        </div>
-    </section>
-
-    <!-- Large Contact Form Section -->
-    <section class="contact-form-section-large">
-        <div class="container">
-            <form class="contact-form-large">
-                <div class="form-row-large">
+        <!-- Large Contact Form Section -->
+        <section class="contact-form-section-large">
+            <div class="container">
+                <form class="contact-form-large">
+                    <div class="form-row-large">
+                        <div class="form-group-large">
+                            <label for="name">Name</label>
+                            <input
+                                type="text"
+                                id="name"
+                                name="name"
+                                placeholder="Your name"
+                                required
+                            />
+                        </div>
+                        <div class="form-group-large">
+                            <label for="email">Email</label>
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="your.email@example.com"
+                                required
+                            />
+                        </div>
+                    </div>
                     <div class="form-group-large">
-                        <label for="name">Name</label>
+                        <label for="subject">Subject</label>
                         <input
                             type="text"
-                            id="name"
-                            name="name"
-                            placeholder="Your name"
+                            id="subject"
+                            name="subject"
+                            placeholder="What's this about?"
                             required
                         />
                     </div>
                     <div class="form-group-large">
-                        <label for="email">Email</label>
-                        <input
-                            type="email"
-                            id="email"
-                            name="email"
-                            placeholder="your.email@example.com"
+                        <label for="message">Message</label>
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="8"
+                            placeholder="Your message..."
                             required
-                        />
+                        ></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-xl">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Contact Information Section -->
+        <section class="contact-info-section">
+            <div class="container">
+                <h2 class="section-title-centered">Contact Information</h2>
+                <div class="contact-info-grid">
+                    <div class="contact-info-card">
+                        <h3>Email</h3>
+                        <p>
+                            <a href="mailto:benjamin02pd2027@saschina.org"
+                                >benjamin02pd2027@saschina.org</a
+                            >
+                        </p>
+                        <p>We'll respond within 24 hours</p>
+                    </div>
+                    <div class="contact-info-card">
+                        <h3>Phone</h3>
+                        <p><a href="tel:+8619512309159">+86 19512309159</a></p>
+                        <p>Available for inquiries</p>
                     </div>
                 </div>
-                <div class="form-group-large">
-                    <label for="subject">Subject</label>
-                    <input
-                        type="text"
-                        id="subject"
-                        name="subject"
-                        placeholder="What's this about?"
-                        required
-                    />
-                </div>
-                <div class="form-group-large">
-                    <label for="message">Message</label>
-                    <textarea
-                        id="message"
-                        name="message"
-                        rows="8"
-                        placeholder="Your message..."
-                        required
-                    ></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary btn-xl">
-                    Send Message
-                </button>
-            </form>
-        </div>
-    </section>
+            </div>
+        </section>
 
-    <!-- Contact Information Section -->
-    <section class="contact-info-section">
-        <div class="container">
-            <h2 class="section-title-centered">Contact Information</h2>
-            <div class="contact-info-grid">
-                <div class="contact-info-card">
-                    <h3>Email</h3>
-                    <p><a href="mailto:benjamin02pd2027@saschina.org">benjamin02pd2027@saschina.org</a></p>
-                    <p>We'll respond within 24 hours</p>
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-section">
+                        <h3>SwimGuard</h3>
+                        <p>Affordable AI for Safer Waters</p>
+                        <p class="footer-description">
+                            Making pool safety accessible to everyone through
+                            innovative technology.
+                        </p>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="solutions.html">Solutions</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Contact</h4>
+                        <p>Email: benjamin02pd2027@saschina.org</p>
+                        <p>Phone: +86 19512309159</p>
+                    </div>
                 </div>
-                <div class="contact-info-card">
-                    <h3>Phone</h3>
-                    <p><a href="tel:+8619512309159">+86 19512309159</a></p>
-                    <p>Available for inquiries</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-section">
-                    <h3>SwimGuard</h3>
-                    <p>Affordable AI for Safer Waters</p>
-                    <p class="footer-description">
-                        Making pool safety accessible to everyone through
-                        innovative technology.
-                    </p>
-                </div>
-                <div class="footer-section">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="solutions.html">Solutions</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Contact</h4>
-                    <p>Email: benjamin02pd2027@saschina.org</p>
-                    <p>Phone: +86 19512309159</p>
+                <div class="footer-bottom">
+                    <p>&copy; 2025 SwimGuard. All rights reserved.</p>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 SwimGuard. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-</body>
+        </footer>
+    </body>
 </html>
